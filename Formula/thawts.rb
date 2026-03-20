@@ -5,21 +5,21 @@
 class Thawts < Formula
   desc "Thought capture and review — CLI/TUI mode"
   homepage "https://thawts.app"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/thawts/thawts/releases/download/v0.1.0/thawts_darwin_amd64.zip"
-    sha256 "33302ed9d09303420300c2a4d52c2fb9d0bf8caa1469369eca8d63ee78750f65"
+    url "https://github.com/thawts/thawts/releases/download/v0.1.1/thawts_darwin_amd64.zip"
+    sha256 "030fabfdbe11a62da479b6f95ad9176359c6a0f54cc04ae3602515776456d5ab"
 
     define_method(:install) do
       bin.install "thawts"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/thawts/thawts/releases/download/v0.1.0/thawts_darwin_arm64.zip"
-    sha256 "49a77c324e9c629937895419cb57d2f48d3d365c67c14e3cde78de25dde3d0df"
+    url "https://github.com/thawts/thawts/releases/download/v0.1.1/thawts_darwin_arm64.zip"
+    sha256 "c0e384e9e503601a081d8760faa674c1b6eb69c4d6707af0003674bf51687c4a"
 
     define_method(:install) do
       bin.install "thawts"
