@@ -11,7 +11,7 @@ class Thawts < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/thawts/thawts/releases/download/v0.1.2/thawts_darwin_amd64.zip"
-    sha256 "9fb12afd6d8e3ed0bfe44ec3b8a45860e3b508452c45aaa86edb1b5f801812b6"
+    sha256 "8cc08f06f3f3cbed85705c86f4c51521bc1459972228003141924d57ac1505a5"
 
     define_method(:install) do
       bin.install "thawts"
@@ -19,7 +19,7 @@ class Thawts < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/thawts/thawts/releases/download/v0.1.2/thawts_darwin_arm64.zip"
-    sha256 "e9cc51dd0aa4f0ecb13ea01bc2709fc1cd9ea9bbe645d0bba0005fd10574fe6a"
+    sha256 "b5a8ba74b360c831b627ed32ba51def430b61090aeecbf76e383c7decd746d1f"
 
     define_method(:install) do
       bin.install "thawts"
